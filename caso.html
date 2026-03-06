@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Caso</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<header>
+<h2 id="tituloCaso"></h2>
+</header>
+
+<main>
+
+<h3>Relatos</h3>
+
+<div id="listaRelatos"></div>
+
+<h3>Novo Relato</h3>
+
+<form onsubmit="event.preventDefault();adicionarRelato();">
+
+<label>Data</label>
+<input type="date" id="dataRelato">
+
+<label>Tipo</label>
+<select id="tipoRelato">
+<option>Atendimento</option>
+<option>Visita domiciliar</option>
+<option>Encaminhamento</option>
+</select>
+
+<label>Relato</label>
+<textarea id="textoRelato"></textarea>
+
+<button>Salvar Relato</button>
+
+</form>
+
+</main>
+
+<script src="../js/app.js"></script>
+
+</body>
+</html>

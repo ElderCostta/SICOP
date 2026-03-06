@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Novo Caso</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<header>
+<h2>Novo Caso</h2>
+</header>
+
+<main>
+
+<form onsubmit="event.preventDefault();salvarCaso();">
+
+<label>Criança / Adolescente</label>
+<input id="crianca" required>
+
+<label>Responsável</label>
+<input id="responsavel">
+
+<label>Endereço</label>
+<input id="endereco">
+
+<label>Tipo de Ocorrência</label>
+<select id="tipo">
+<option>Negligência</option>
+<option>Violência</option>
+<option>Evasão Escolar</option>
+<option>Abandono</option>
+</select>
+
+<label>Descrição</label>
+<textarea id="descricao"></textarea>
+
+<button>Salvar Caso</button>
+
+</form>
+
+</main>
+
+<script src="../js/app.js"></script>
+
+</body>
+</html>
